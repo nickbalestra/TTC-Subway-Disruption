@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <meta charset="UTF-8">
+  <title>TTC Subway Disruption</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+
+  <div class="container">
+
+    <div class="header clearfix">
+      <h3 class="text-muted">TTC Subway Disruption</h3>
+    </div>
+    <hr>
+
+    <div id="app"></div>
+    <hr>
+
+    <div class="row marketing">
+      <div class="col-sm-6">    
+        <h4>Stack</h4>
+        <p>
+          <ul>
+            <li><a href="https://github.com/facebook/react">React</a></li>
+            <li><a href="https://webpack.github.io/">Webpack</a></li>
+            <li><a href="http://babeljs.io/">Babel</a></li>
+            <li><a href="https://github.com/visionmedia/superagent">Superagent</a></li>
+            <li><a href="http://facebook.github.io/jest/">Jest</a></li>
+            <li><a href="https://facebook.github.io/react/docs/test-utils.html">React Test Utils</a></li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-sm-6">  
+        <h4>TTC Subway Disruption</h4>
+        <p>
+        A simple tool to display, add and remove disruptions on the 4 metro lines in Toronto operated by the <a href="https://www.ttc.ca/Subway/index.jsp" target="_blank">TCC</a>. In the app state an array of disruptions is maintained. Each disruption has the following format
+        </p>
+        <p>
+        <pre><code>disruption: {
+  line: 1, 
+  branch: 0, 
+  notes: 'Closing all stretches of track',
+  stops:[6, 7, 8, 9]
+}</code></pre>
+        </p>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <hr>
+      <p>&copy; 2016 <a href="http://nick.balestra.ch">Nick Balestra</a></p>
+    </footer>
+
+  </div>
+<script src="build.js"></script>
